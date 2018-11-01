@@ -46,7 +46,9 @@ public class PhoneCallArray
           
             
         }
-        
+        for(int i=0; i<call.size(); i++){
+            call.get(i).display();
+        }
        
         
         
