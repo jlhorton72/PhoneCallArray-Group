@@ -42,9 +42,11 @@ public class PhoneCallArray
                 OutgoingPhoneCall ouc = new OutgoingPhoneCall(num,conv);
                 call.add(ouc);
             }
+            flag = inp;
           
             
         }
+        
        
         
         
