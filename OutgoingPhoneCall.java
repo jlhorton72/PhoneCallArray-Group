@@ -34,7 +34,7 @@ public class OutgoingPhoneCall extends PhoneCall
     @Override
     public void display()
     {
-        System.out.println("Price of call: " + getPrice() + ", Phone number: " + " rate per minute: 0.04, " + " number of minutes: " + timeOfCall + ".");
+        System.out.println("Price of call: " + getPrice() + ", Phone number: " + phNumber + " rate per minute: 0.04, " + " number of minutes: " + timeOfCall + ".");
     } // end of display
     
 }
