@@ -18,7 +18,7 @@ public class PhoneCallArray
      */
     public static void main(String[] args) 
     {
-        ArrayList<String> call = new ArrayList<String>();
+        ArrayList<PhoneCall> call = new ArrayList<PhoneCall>();
         
         String flag ="";
         Scanner key = new Scanner(System.in);
@@ -30,9 +30,8 @@ public class PhoneCallArray
                 System.out.println("Enter Phone Number: ");
                 String num = key.next();
                 IncomingPhoneCall inc = new IncomingPhoneCall(num);
-                inc(num);
-                
-                call.add(num);   
+                call.add(inc);
+                  
             }
             if("N".equals(inp)){
                 System.out.println("Enter Phone Number: ");
@@ -41,19 +40,12 @@ public class PhoneCallArray
                 String leng = key.next();
                 Double conv = Double.parseDouble(leng);
                 OutgoingPhoneCall ouc = new OutgoingPhoneCall(num,conv);
-                
-                call.add(num);
-                call.add(leng);
+                call.add(ouc);
             }
           
             
         }
-        
-//        System.out.println(num);
-//        System.out.println(leng);
-//        System.out.println(inp);
-        
-        
+       
         
         
     } // end of main
