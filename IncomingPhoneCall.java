@@ -11,15 +11,30 @@ package phonecallarray;
  */
 public class IncomingPhoneCall extends PhoneCall 
 {
-    public IncomingPhoneCall(String num, double rate)
+       
+    public IncomingPhoneCall(String num)
     {
-        super(num, rate);
+        super(num);
+        this.price = 0.02;
     } // end of constructor
+    
+    @Override
+    public double getPrice()
+    {
+        return price;
+    } // end of getPrice
+    
+    @Override
+    public String getPhNumber()
+    {
+        return phNumber;
+    }
     
     @Override
     public void display()
     {
-        super.display();
+        System.out.println("Call number: " + phNumber);
+        System.out.println("Rate is: " + price);
         System.out.println("Price of call: " + price);
     } // end of display
     

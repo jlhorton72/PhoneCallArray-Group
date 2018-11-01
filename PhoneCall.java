@@ -9,22 +9,18 @@ package phonecallarray;
  *
  * @author jh0375800
  */
-public class PhoneCall 
+abstract class PhoneCall 
 {
     protected String phNumber;
     protected double price;
 
-    public String getPhNumber() {
-        return phNumber;
-    }
+    abstract String getPhNumber();
 
     public void setPhNumber(String phNumber) {
         this.phNumber = phNumber;
     }
 
-    public double getPrice() {
-        return price;
-    }
+    abstract double getPrice();
 
     public void setPrice(double price) {
         this.price = price;
@@ -43,10 +39,7 @@ public class PhoneCall
     } // end of constructor PhoneCall
     
     
-    public void display()
-    {
-        System.out.println("Call number: " + phNumber);
-        System.out.println("Rate is: " + price);
-    } // end of display
+    abstract void display();
+
     
 } // end of PhoneCall
